@@ -1,0 +1,34 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+section:first-child {
+    padding-top: 0px;
+    padding-bottom: 0px;  
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.society_list {
+    display: block;
+    content: '';
+    margin-right: 10px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.society_list:last-child {
+    margin-right: 0px;
+}

@@ -1,0 +1,16 @@
+.society_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #AFB1B8;
+}
+
+.society_icon:hover,
+.society_icon:focus {
+    fill: white;
+    background-color: var(--accent-color);
+}
