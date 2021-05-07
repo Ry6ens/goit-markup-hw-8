@@ -41,25 +41,70 @@
                         </svg>
                         <a class="info__icon" href="tel:+380961111111">+38 096 111 11 11</a></li>   
                 </ul>
+                <button class="mobile-menu-btn" data-menu-button>
+                    <svg class="mobile-menu-icon">
+                        <use class="icon-open" href="./images/sprite-mobile.svg#open-burger"></use>
+                        <use class="icon-close" href="./images/sprite-mobile.svg#close-burger"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__overlay">
+            <ul class="mobile-menu_list">
+                <li class="mobile-menu_item">
+                    <a class="nav__link menu" href="/index.html">Студия</a>
+                </li>
+                <li class="mobile-menu_item">
+                    <a class="nav__link menu" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu_item">
+                    <a class="nav__link menu" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-info__list">
+                <li class="mobile-info__item">
+                    <a class="info__phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </li>
+                <li class="mobile-info__item">
+                    <a class="info__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </ul>
+            <ul class="mobile-society__list">
+                <li class="mobile-society__item">
+                    <a class="society__link" href="">Instagram</a>
+                </li>
+                <li class="mobile-society__item">
+                    <span class="line"></span>
+                    <a class="society__link" href="">Twitter</a>
+                </li>
+                <li class="mobile-society__item">
+                    <span class="line"></span>
+                    <a class="society__link" href="">Facebook</a>
+                </li>
+                <li class="mobile-society__item">
+                    <span class="line"></span>
+                    <a class="society__link" href="">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
       
     <main>
            <!-- Filters section -->
         <section>
             <div class="container">
                 <ul class="filter">
-                    <li><button type="button" class="filter_button">Все</button></li>
-                    <li><button type="button" class="filter_button">Веб-сайты</button></li>
-                    <li><button type="button" class="filter_button">Приложения</button></li>
-                    <li><button type="button" class="filter_button">Дизайн</button></li>
-                    <li><button type="button" class="filter_button">Маркетинг</button></li>
+                    <li class="filter-item"><button type="button" class="filter_button">Все</button></li>
+                    <li class="filter-item"><button type="button" class="filter_button">Веб-сайты</button></li>
+                    <li class="filter-item"><button type="button" class="filter_button">Приложения</button></li>
+                    <li class="filter-item"><button type="button" class="filter_button">Дизайн</button></li>
+                    <li class="filter-item"><button type="button" class="filter_button">Маркетинг</button></li>
                 </ul> 
             </div>
             <!-- Portfolio -->
             <div class="container">
-                <ul class="portfolio">
+                <ul class="portfolio_list">
                     <li class="portfolio_card">
                         <div class="thumb">
                             <img width="370" src="./images/Projects/project1.jpg" alt="Ноутбук">
@@ -175,64 +220,69 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-        <div class="container">
-            <div class="nav-logo-footer">
-                <a href="./index.html"><span class="nav_logo1">Web</span><span class="nav_logo2-footer">Studio</span></a>
-                <h3 class="footer_title">присоединяйтесь</h3>
-                <h3 class="footer_title">Подпишитесь на рассылку</h3>
+        <div class="container footer-overlay">
+            <div class="footer-block">
+                <div class="nav-logo-footer">
+                    <a href="./index.html"><span class="nav_logo1">Web</span><span class="nav_logo2-footer">Studio</span></a>
+                    <ul class="footer_contacts">
+                        <li>
+                            <address class="footer_address">г. Киев, пр-т Леси Украинки, 26</address>
+                        </li>
+                        <li class="footer_mail">
+                            <a class="mail-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer_tel">
+                            <a class="mail-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts_field">
+                    <h3 class="footer_title">присоединяйтесь</h3>
+                    <ul class="footer_society">
+                        <li class="society_list">
+                            <a class="society_icon" target="blank" rel="noopener noreferrer">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/society.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="society_list">
+                            <a class="society_icon" target="blank" rel="noopener noreferrer">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/society.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="society_list">
+                            <a class="society_icon" target="blank" rel="noopener noreferrer">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/society.svg#icon-facebook"></use>
+                                </svg>
+                        </a>
+                        </li>
+                        <li class="society_list">
+                            <a class="society_icon" target="blank" rel="noopener noreferrer">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/society.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contacts_field">
-                <ul class="footer_contacts">
-                    <li>
-                        <address class="footer_address">г. Киев, пр-т Леси Украинки, 26</address>
-                    </li>
-                    <li class="footer_mail">
-                        <a class="mail-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer_tel">
-                        <a class="mail-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-                <ul class="footer_society">
-                    <li class="society_list">
-                        <a class="society_icon" target="blank" rel="noopener noreferrer">
-                            <svg width="20px" height="20px">
-                                <use href="./images/society.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="society_list">
-                        <a class="society_icon" target="blank" rel="noopener noreferrer">
-                            <svg width="20px" height="20px">
-                                <use href="./images/society.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="society_list">
-                        <a class="society_icon" target="blank" rel="noopener noreferrer">
-                            <svg width="20px" height="20px">
-                                <use href="./images/society.svg#icon-facebook"></use>
-                            </svg>
-                    </a>
-                    </li>
-                    <li class="society_list">
-                        <a class="society_icon" target="blank" rel="noopener noreferrer">
-                            <svg width="20px" height="20px">
-                                <use href="./images/society.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <div class="footer_subscribe">
-                    <form>
+            <div class="footer_subscribe">
+                <h3 class="footer_title">Подпишитесь на рассылку</h3>
+                <div class="footer-overlay">
+                    <form class="footer-form">
                         <label>
                             <input class="footer_subscribe--form" type="email" name="email" placeholder="E-mail">
                         </label>
                     </form>
-                    <button type="button" class="button button-footer" >Подписаться</button>
+                    <button type="button" class="button button-footer">Подписаться</button>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

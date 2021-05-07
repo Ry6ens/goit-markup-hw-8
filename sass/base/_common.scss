@@ -11,6 +11,11 @@ body {
 section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 section:first-child {
@@ -31,4 +36,14 @@ a {
 
 button {
     cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }

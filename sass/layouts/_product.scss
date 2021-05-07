@@ -1,6 +1,21 @@
+.product {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .product_list {
     display: flex;
     justify-content: space-between;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .product_item {
