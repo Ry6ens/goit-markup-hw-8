@@ -76,6 +76,7 @@
     display: flex;
     margin-bottom: 30px;
     align-items: center;
+    justify-content: center;
 
     font-size: 14px;
     line-height: 1.71;
@@ -93,13 +94,26 @@
 
 .checkbox_icon {
     display: inline-block;
-    margin-left: 12px;
     margin-right: 8px;
     width: 15px;
     height: 15px;
 
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
+}
+
+.checkbox_text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: #757575;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox_contract {

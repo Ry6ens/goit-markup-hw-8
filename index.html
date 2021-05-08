@@ -92,14 +92,14 @@
     
     <main>
         <!-- Hero section -->
-       <!-- <section class="hero-section">
+       <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
-            </div> -->
+            </div>
 
             <!-- Hero modal window -->
-            <!-- <div class="backdrop is-hidden" data-modal>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="modal__button-close" data-modal-close aria-label="закрыть">
                     <svg width="18px" height="18px">
@@ -142,7 +142,7 @@
                         <label class="modal_checkbox">
                             <input class="checkbox_input" type="checkbox" value="">
                             <span class="checkbox_icon"></span>
-                            <span>Соглашаюсь с рассылкой и принимаю <span class="checkbox_contract">Условия договора</span></span>
+                            <span class="checkbox_text">Соглашаюсь с рассылкой и принимаю <span class="checkbox_contract">Условия договора</span></span>
                         </label>
                         <div class="modal_submit">
                             <button type="submit" class="button">Отправить</button>
@@ -152,7 +152,7 @@
                 </div>
 
             </div>
-        </section> -->
+        </section>
 
         <!-- Особенности -->
 
@@ -213,7 +213,12 @@
                 <h2 class="section_title">Наша команда</h2>
                 <ul class="team_list">
                     <li class="team_item">
-                        <img width="270" src="./images/portret1.jpg" alt="Игорь Демьяненко">
+                        <picture>
+                            <source srcset="./images/desktop/team/ProductManager-desktop.jpg 1x, ./images/desktop/team/ProductManager2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/ProductManager-tablet.jpg 1x, ./images/tablet/team/ProductManager2x-tablet.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/ProductManager-mobile.jpg 1x, ./images/mobile/team/ProductManager2x-mobile.jpg 2x" media="(max-width: 767px)">
+                            <img src="./images/desktop/team/ProductManager-desktop.jpg" alt="Игорь Демьяненко">
+                        </picture>
                         <h4 class="team_title">Игорь Демьяненко</h4>
                         <p class="team_label">Product Designer</p>
                         <ul class="society">
@@ -248,7 +253,12 @@
                         </ul>
                     </li>
                     <li class="team_item">
-                        <img width="270" src="./images/portret2.jpg" alt="Ольга Репина">
+                        <picture>
+                            <source srcset="./images/desktop/team/FrontedDeveloper-desktop.jpg 1x, ./images/desktop/team/FrontedDeveloper2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/FrontedDeveloper-tablet.jpg 1x, ./images/tablet/team/FrontedDeveloper2x-tablet.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/FrontedDeveloper-mobile.jpg 1x, ./images/mobile/team/FrontedDeveloper2x-mobile.jpg 2x" media="(max-width: 767px)">
+                            <img src="./images/desktop/team/FrontedDeveloper-desktop.jpg" alt="Ольга Репина">
+                        </picture>
                         <h4 class="team_title">Ольга Репина</h4>
                         <p class="team_label">Frontend Developer</p>
                         <ul class="society">
@@ -283,7 +293,12 @@
                         </ul>
                     </li>
                     <li class="team_item">
-                        <img width="270" src="./images/portret3.jpg" alt="Николай Тарасов">
+                        <picture>
+                            <source srcset="./images/desktop/team/Marketing-desktop.jpg 1x, ./images/desktop/team/Marketing2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/Marketing-tablet.jpg 1x, ./images/tablet/team/Marketing2x-tablet.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/Marketing-mobile.jpg 1x, ./images/mobile/team/Marketing2x-mobile.jpg 2x" media="(max-width: 767px)">
+                            <img src="./images/desktop/team/Marketing-desktop.jpg" alt="Николай Тарасов">
+                        </picture>
                         <h4 class="team_title">Николай Тарасов</h4>
                         <p class="team_label">Marketing</p>
                         <ul class="society">
@@ -318,7 +333,12 @@
                         </ul>
                     </li>
                     <li class="team_item">
-                        <img width="270" src="./images/portret4.jpg" alt="Михаил Ермаков">
+                        <picture>
+                            <source srcset="./images/desktop/team/UIDesigner-desktop.jpg 1x, ./images/desktop/team/UIDesigner2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/UIDesigner-tablet.jpg 1x, ./images/tablet/team/UIDesigner2x-tablet.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/UIDesigner-mobile.jpg 1x, ./images/mobile/team/UIDesigner2x-mobile.jpg 2x" media="(max-width: 767px)">
+                            <img src="./images/desktop/team/UIDesigner-desktop.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <h4 class="team_title">Михаил Ермаков</h4>
                         <p class="team_label">UI Designer</p>
                         <ul class="society">

@@ -1,5 +1,5 @@
 .hero-section {
-    height: 600px;
+    height: 400px;
 
     text-align: center;
 
@@ -9,13 +9,91 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
+      url(../images/mobile/hero/header-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-device-pixel-ratio:2 ),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/mobile/hero/header2x-mobile.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/hero/header-tablet.jpg);
+
+      @media (min-device-pixel-ratio:2 ),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/tablet/hero/header2x-tablet.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/desktop/hero/header-desktop.jpg);
+        
+      @media (min-device-pixel-ratio:2 ),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/desktop/hero/header2x-desktop.jpg);
+        }
+    }
 }
 
 .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    width: 360px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        width: 700px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+
+/* .hero-title {
     width: 696px;
     margin: 0px auto 30px auto;
     padding-top: 200px;
@@ -27,7 +105,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-}
+} */
 
 .hero-title.centered {
     text-align: center;
