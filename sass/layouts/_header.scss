@@ -88,10 +88,6 @@
 
     cursor: pointer;
 
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
-
     &:hover,
     &:focus {
         fill: var(--accent-color);
